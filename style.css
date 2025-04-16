@@ -1,0 +1,147 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4ff;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #4a90e2;
+}
+
+.quote {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 15px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #357ab8;
+}
+
+.task-list {
+  margin-bottom: 20px;
+}
+
+.task-item {
+  background: #e8f0ff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.task-item:hover {
+  transform: scale(1.02);
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.progress-container {
+  background: #d0dfff;
+  border-radius: 10px;
+  height: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: #4a90e2;
+  transition: width 0.4s ease;
+}
+
+.submit-btn {
+  width: 100%;
+  font-size: 16px;
+}
+/* everything remains the same */
+
+.displayed-tasks {
+  background: #f8fbff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #d0e1ff;
+  margin-top: 20px;
+  display: none;
+  white-space: pre-line;
+  font-size: 16px;
+  line-height: 1.6;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .input-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-section input,
+  .input-section button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .task-item {
+    font-size: 14px;
+  }
+
+  .displayed-tasks {
+    font-size: 14px;
+  }
+
+  .quote {
+    font-size: 16px;
+    text-align: center;
+  }
+}
