@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Motivational To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>✨ Let's Crush Some Goals!</h1>
+    <p class="quote">"The secret of getting ahead is getting started."</p>
+    
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Enter a new task..." />
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="task-list" id="taskList"></div>
+
+    <button class="submit-btn" onclick="displayAllTasks()">✅ Submit All</button>
+
+    <div id="displayedTasks" class="displayed-tasks"></div>
+
+    <!-- Email Form -->
+    <form id="taskForm" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="32916ce6-9ef2-4d95-8d3a-f8f83464b165">
+      <input type="hidden" name="message" id="taskMessage" />
+      <button type="submit" class="submit-btn">📧 Send to Email</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
